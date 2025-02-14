@@ -11,11 +11,11 @@ function movePlayer(direction){
 movePlayer('up')
 
 function calculatescore (){
-   grabscore1().then(score1) =>
-   grabscore2().then(score2) =>
-   {
-    console.log(`Final Score: ${score1 + score2}`);
-   }
+   grabscore1().then(score1 => {
+       return grabscore2().then(score2 => {
+           console.log(`Final Score: ${score1 + score2}`);
+       });
+   });
 }
 
 function grabgetScore1() {
