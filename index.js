@@ -21,4 +21,9 @@ function calculatescore (){
 function grabgetScore1() {
     return new Promise(resolve => setTimeout(() => resolve(50), 100));
 }
+
+function grabgetScore2() {
+    return new Promise(resolve => setTimeout(() => resolve(40), 100));
+}
+calculatescore()
 // no time to finish sigh
