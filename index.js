@@ -1,6 +1,7 @@
+
 function movePlayer(direction){
     return new Promise((resolve) => {
-        resolve(['B', 'C', 'D'])
+        resolve()
     }).then(data => {
         setTimeout(()=>{
             console.log(direction)
@@ -8,3 +9,4 @@ function movePlayer(direction){
     });
 }
 movePlayer('up')
+
