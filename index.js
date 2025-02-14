@@ -10,3 +10,15 @@ function movePlayer(direction){
 }
 movePlayer('up')
 
+function calculatescore (){
+   grabscore1().then(score1) =>
+   grabscore2().then(score2) =>
+   {
+    console.log(`Final Score: ${score1 + score2}`);
+   }
+}
+
+function grabgetScore1() {
+    return new Promise(resolve => setTimeout(() => resolve(50), 100));
+}
+// no time to finish sigh
